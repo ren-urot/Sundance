@@ -1,7 +1,7 @@
 SUNDANCE MALL DIRECTORY
 =======================
-Static HTML Export Package
-Generated: 2026-03-10T05:49:29.892Z
+Static HTML Export Package (Self-Contained)
+Generated: 2026-03-10T06:53:02.007Z
 
 FILES INCLUDED
 --------------
@@ -12,34 +12,25 @@ FILES INCLUDED
 - vr-directions.html  VR Directions (VR corridor navigation view)
 - README.txt          This file
 
-DEPLOYMENT INSTRUCTIONS
------------------------
-1. Extract this folder to your web server's root directory
-2. All pages are self-contained HTML with external dependencies:
-   - Google Fonts (Inter) - loaded from fonts.googleapis.com
-   - Tailwind CSS - loaded from cdn.tailwindcss.com
-   - Unsplash images - loaded from images.unsplash.com
-3. No build step required - just upload and serve
+SELF-CONTAINED EXPORT
+---------------------
+All images (photos, icons, backgrounds) are embedded directly
+into each HTML file as base64 data URIs. No external image
+hosting or CDN is required - the files work fully offline.
 
-COMPATIBLE HOSTING SERVICES
-----------------------------
-- Netlify (drag & drop the folder)
-- Vercel (upload as static site)
-- GitHub Pages (push to gh-pages branch)
-- AWS S3 + CloudFront
-- Apache / Nginx web servers
-- Any static file hosting service
+External dependencies (loaded via CDN):
+- Google Fonts (Inter) - fonts.googleapis.com
+- Tailwind CSS - cdn.tailwindcss.com
+
+DEPLOYMENT
+----------
+1. Extract this folder to your web server's root directory
+2. No build step required - just upload and serve
+3. Open index.html in a browser to verify
+4. Compatible with: Netlify, Vercel, GitHub Pages, S3, Apache, Nginx
 
 NAVIGATION
 ----------
-Internal links between pages use relative .html filenames
-(e.g., href="directory.html") for static file serving.
-
-NOTES
------
-- Images are served from Unsplash CDN and require internet access
-- Some interactive features (route switching, search) are rendered
-  as their initial/default state in the static export
-- For full interactivity, deploy the original React application
+Internal links use relative .html filenames (e.g., href="directory.html").
 
 (c) 2024 Sundance Mall. All rights reserved.

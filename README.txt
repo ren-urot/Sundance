@@ -1,7 +1,7 @@
 SUNDANCE MALL DIRECTORY
 =======================
 Static HTML Export Package
-Generated: 2026-03-10T05:08:19.636Z
+Generated: 2026-03-10T05:49:29.892Z
 
 FILES INCLUDED
 --------------
@@ -10,6 +10,7 @@ FILES INCLUDED
 - map.html            Store Map (interactive floor plan with routes)
 - news.html           What's New (latest news, events, promotions)
 - vr-directions.html  VR Directions (VR corridor navigation view)
+- README.txt          This file
 
 DEPLOYMENT INSTRUCTIONS
 -----------------------
@@ -31,13 +32,14 @@ COMPATIBLE HOSTING SERVICES
 
 NAVIGATION
 ----------
-Internal links between pages have been rewritten to use
-relative .html filenames (e.g., href="directory.html").
+Internal links between pages use relative .html filenames
+(e.g., href="directory.html") for static file serving.
 
 NOTES
 -----
 - Images are served from Unsplash CDN and require internet access
-- Some interactive features (route switching, search) require JavaScript
+- Some interactive features (route switching, search) are rendered
+  as their initial/default state in the static export
 - For full interactivity, deploy the original React application
 
 (c) 2024 Sundance Mall. All rights reserved.
